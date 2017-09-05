@@ -5,17 +5,17 @@
                  [environ "1.1.0"]
                  [hiccup "1.0.5"]
                  [org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.671"]
+                 [org.clojure/clojurescript "1.9.908"]
                  [org.immutant/web "2.1.9"]
                  [org.webjars/bootstrap "3.3.6"]
                  [reagent "0.7.0"]
-                 [ring "1.6.1"]
+                 [ring "1.6.2"]
                  [ring-webjars "0.2.0"]
-                 [ring/ring-defaults "0.3.0" :exclusions [javax.servlet/servlet-api]]]
+                 [ring/ring-defaults "0.3.1" :exclusions [javax.servlet/servlet-api]]]
 
-  :plugins       [[lein-cljsbuild "1.1.6"]
+  :plugins       [[lein-cljsbuild "1.1.7"]
                   [lein-environ "1.1.0"]
-                  [lein-figwheel "0.5.11"]]
+                  [lein-figwheel "0.5.13"]]
 
   :main          {{root-ns}}.server
 
@@ -39,9 +39,9 @@
 
   :profiles      {:dev     {:env          {:dev? true}
                             :source-paths ["env/dev/src"]
-                            :dependencies [[figwheel-sidecar "0.5.11"]
+                            :dependencies [[figwheel-sidecar "0.5.13"]
                                            [org.clojure/tools.nrepl "0.2.13"]
-                                           [com.cemerick/piggieback "0.2.2-SNAPSHOT"]]
+                                           [com.cemerick/piggieback "0.2.2"]]
                             :figwheel     {:nrepl-port       7000
                                            :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
                             :cljsbuild    {:builds {:app
