@@ -25,7 +25,7 @@
      (include-js "cljs/app.js")]
     [:body
      [:div#app [:h1 "Waiting for ClojureScript to load ..."]]
-     (javascript-tag "{{root-ns}}.client.run();")]))
+     (javascript-tag "{{sanitized}}.client.run();")]))
 
 (def app-routes
   (routes
