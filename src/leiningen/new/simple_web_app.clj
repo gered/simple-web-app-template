@@ -19,5 +19,5 @@
       ["resources/public/css/app.css"      (render "resources/public/css/app.css" data)]
       ["src/{{root-ns-path}}/client.cljs"  (render "src/root_ns/client.cljs" data)]
       ["src/{{root-ns-path}}/server.clj"   (render "src/root_ns/server.clj" data)]
-      [".gitignore"                        (render ".gitignore" data)]
+      [".gitignore"                        (render "gitignore" data)]
       ["project.clj"                       (render "project.clj" data)])))
