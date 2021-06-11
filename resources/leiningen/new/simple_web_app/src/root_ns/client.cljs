@@ -1,14 +1,16 @@
 (ns {{root-ns}}.client
   (:require
-    [reagent.core :as r]))
+    [reagent.dom :as rd]))
 
 (defn main-app-component
   []
-  [:h1 "Hello, world!"])
+  [:div
+   [:h1 "Hello, world!"]
+   [:p "This is my Clojure web app."]])
 
 (defn reload
   []
-  (r/render-component [main-app-component] (.getElementById js/document "app")))
+  (rd/render [main-app-component] (.getElementById js/document "app")))
 
 (defn ^:export run
   []
