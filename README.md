@@ -14,10 +14,9 @@ stuff is more oriented towards my own particular preferences regarding the set-u
 Includes out-of-the-box support for:
 
 * Ring/Compojure
-* Immutant
+* http-kit
 * Reagent
 * Figwheel
-* Bootstrap
 
 ## Usage
 
@@ -45,6 +44,6 @@ $ lein uberjar
 
 ## License
 
-Copyright © 2017 Gered King
+Copyright © 2021 Gered King
 
 Distributed under the the MIT License. See LICENSE for more details.
