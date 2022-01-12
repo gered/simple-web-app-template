@@ -1,0 +1,4 @@
+{:main       {{root-ns}}.client
+ :watch-dirs ["src" "env/dev/src"]
+ :output-dir "resources/public/cljs/target"
+ :output-to  "resources/public/cljs/app.js"}
