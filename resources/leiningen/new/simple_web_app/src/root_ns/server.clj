@@ -57,7 +57,7 @@
   :start
   (let [{:keys [port bind]
          :or   {port 8080
-                bind "0.0.0.0"}} (:http-server config)
+                bind "0.0.0.0"}} (:http config)
         server (http-kit/run-server
                  (as-> #'handler h
                        (if (:dev? config) (wrap-reload h) h))
