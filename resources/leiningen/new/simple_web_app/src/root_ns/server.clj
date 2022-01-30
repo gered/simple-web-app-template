@@ -190,4 +190,6 @@
   [& args]
   (log/info "<%name%> is starting up ...")
   (mount/start-with-args args)
+  (when (:dev? config)
+    (log/warn "*** Running in development mode! ***"))
   (log/info "Ready!"))
