@@ -5,8 +5,8 @@
   :license      {:name "MIT License"
                  :url  "http://opensource.org/licenses/MIT"}
 
-  :dependencies [[ch.qos.logback/logback-classic "1.2.7"]
-                 [cprop "0.1.19"]
+  :dependencies [[aero "1.1.6"]
+                 [ch.qos.logback/logback-classic "1.2.7"]
                  [hiccup "1.0.5"]
                  [http-kit "2.5.3"]
                  [javax.servlet/servlet-api "2.5"]
